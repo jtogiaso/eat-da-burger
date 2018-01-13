@@ -1,0 +1,45 @@
+{
+ 
+    "development": {
+ 
+        "username": "root",
+ 
+        "password": {"ENV" : "DB_PWD"},
+ 
+        "database": "burger_db",
+ 
+        "host": "localhost",
+ 
+        "dialect": "mysql"
+ 
+    },
+ 
+    "test": {
+ 
+        "username": "",
+ 
+        "password": {"ENV" : "DB_PWD"},
+ 
+        "database": "",
+ 
+        "host": "localhost",
+ 
+        "dialect": "mysql"
+ 
+    },
+ 
+    "production": {
+ 
+        "username": "",
+ 
+        "password": {"ENV" : "DB_PWD"},
+ 
+        "database": "",
+ 
+        "host": "localhost",
+ 
+        "dialect": "mysql"
+ 
+    }
+    
+}

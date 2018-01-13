@@ -1,0 +1,43 @@
+<!--Body-->
+<main role="main">
+    <div class="row">
+        <div class="col-lg-12">
+            <ol class="list-group">
+                {{#each data }}
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-4">
+                        	{{#unless this.devoured}}
+                            <h3>
+                            	{{id}}. {{burger_name}}
+                        	</h3>
+                        	{{/unless}}
+                        </div>
+                        <div class="col-lg-4 text-center">
+                        	{{#unless this.devoured}}
+                            <button type="button" class="btn btn-info devour" burger-id="{{id}}">Devour</button>
+                            {{/unless}}
+                        </div>
+                        <div class="col-lg-4">
+                        	{{#if this.devoured}}
+                            <h3>
+                            	{{id}}. {{burger_name}}
+                        	</h3>              
+                        	{{/if}}          	
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    <div class="text-center row">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <textarea class="form-control" id="new-burger-name" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-success" id="burger-maker">Make da burger!</button>
+        </div>
+    </div>
+</main>
+<!--End Body -->
